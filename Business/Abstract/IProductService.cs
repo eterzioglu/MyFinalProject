@@ -15,6 +15,9 @@ namespace Business.Abstract
         IDataResult<List<Product>> GetAllByCategoryId(int id);
         IDataResult<Product> GetById(int productId);
         IDataResult<List<Product>> GetByUnitPrice(decimal min, decimal max);
-        IDataResult<List<ProductDetailDto>> GetProductDetails(); 
+        IDataResult<List<ProductDetailDto>> GetProductDetails();
+
+        //Transaction uygulamalarda tutarlılığı sağlamak için kullanılır..
+        IResult AddTransaction(Product product);
     }
 }

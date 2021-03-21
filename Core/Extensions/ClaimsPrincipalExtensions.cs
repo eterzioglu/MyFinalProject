@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Security.Claims;
 
-namespace Core.Extentions
+namespace Core.Extensions
 {
     public static class ClaimsPrincipalExtensions
     {
